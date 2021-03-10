@@ -21,7 +21,7 @@
   - Javascript classes used
   - Generics for constructing core types
 - Reduced dependencies
-  - Dependent on create-hash, decimal.js, ripple-address-codec
+  - Dependent on create-hash, decimal.js, brt-address-codec
 - Migrate testing to Jest and added tests
   - Tests for pseudo-transactions
 - Added support for NegativeUNL pseudo-transactions
@@ -29,7 +29,7 @@
 ## 0.2.6 (2019-12-31)
 
 - Update dependencies
-  - decimal.js, fs-extra, mocha, handlebars, bn.js, babel-eslint, ripple-address-codec
+  - decimal.js, fs-extra, mocha, handlebars, bn.js, babel-eslint, brt-address-codec
 
 ## 0.2.5 (2019-12-14)
 
@@ -37,7 +37,7 @@
 
 ## 0.2.4 (2019-09-04)
 
-- Update ripple-address-codec to 3.0.4
+- Update brt-address-codec to 3.0.4
 
 ## 0.2.3 (2019-08-29)
 

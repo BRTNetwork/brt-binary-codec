@@ -3,7 +3,7 @@ import { SerializedType, JsonObject } from "./serialized-type";
 import {
   xAddressToClassicAddress,
   isValidXAddress,
-} from "ripple-address-codec";
+} from "@brtnetwork/brt-address-codec";
 import { BinaryParser } from "../serdes/binary-parser";
 import { BinarySerializer, BytesList } from "../serdes/binary-serializer";
 import { Buffer } from "buffer/";
