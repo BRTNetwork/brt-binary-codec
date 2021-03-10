@@ -2,11 +2,11 @@
 
 ## Types
 
-These are the [types](https://xrpl.org/serialization.html#type-list) associated with a given Serialization Field. Each type has an arbitrary [type_code](https://xrpl.org/serialization.html#type-codes), with lower codes sorting first.
+These are the [types](https://brtl.org/serialization.html#type-list) associated with a given Serialization Field. Each type has an arbitrary [type_code](https://brtl.org/serialization.html#type-codes), with lower codes sorting first.
 
 ## Ledger Entry Types
 
-Each ledger's state tree contain [ledger objects](https://xrpl.org/ledger-object-types.html), which represent all settings, balances, and relationships in the shared ledger. 
+Each ledger's state tree contain [ledger objects](https://brtl.org/ledger-object-types.html), which represent all settings, balances, and relationships in the shared ledger. 
 
 ## Fields
 
@@ -29,11 +29,11 @@ For example, the `Account` field has sort code (nth) `1`, so it comes before the
 
 Sort code numbers are reused for fields of different types, but different fields of the same type never have the same sort code. When you combine the type code with the sort code, you get the field's unique _Field ID_.
 
-The unique [Field ID](https://xrpl.org/serialization.html#field-ids) is prefixed before the field in the final serialized blob. The size of the Field ID is one to three bytes depending on the type code and the field codes it combines.
+The unique [Field ID](https://brtl.org/serialization.html#field-ids) is prefixed before the field in the final serialized blob. The size of the Field ID is one to three bytes depending on the type code and the field codes it combines.
 
 ### isVLEncoded
 
-If true, the field is Variable Length encoded and [length-prefixed](https://xrpl.org/serialization.html#length-prefixing). The variable-length encoded fields are `STI_VL`/`Blob`, `STI_ACCOUNT`/`AccountID`, and `STI_VECTOR256`/`Vector256`.
+If true, the field is Variable Length encoded and [length-prefixed](https://brtl.org/serialization.html#length-prefixing). The variable-length encoded fields are `STI_VL`/`Blob`, `STI_ACCOUNT`/`AccountID`, and `STI_VECTOR256`/`Vector256`.
 
 ### isSerialized
 
@@ -51,7 +51,7 @@ True unless the field is [specified with `SField::notSigning`](https://github.co
 See:
 
 - https://github.com/ripple/rippled/blob/develop/src/ripple/protocol/TER.h
-- https://xrpl.org/transaction-results.html
+- https://brtl.org/transaction-results.html
 
 TODO: Write a script to read rippled's source file and generate the necessary mapping.
 

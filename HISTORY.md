@@ -1,4 +1,4 @@
-# ripple-binary-codec Release History
+# brt-binary-codec Release History
 
 ## 1.1.1 (2021-02-12)
 - PathSet.toJSON() does not return undefined values

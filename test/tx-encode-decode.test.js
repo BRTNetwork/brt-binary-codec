@@ -2,9 +2,9 @@ const { encode, decode } = require("../dist");
 
 // Notice: no Amount or Fee
 const tx_json = {
-  Account: "r9LqNeG6qHxjeUocjvVki2XR35weJ9mZgQ",
+  Account: "bnCLGxX4DaGh89DLohvD1qcCHSXnrvHPnN",
   // Amount: '1000',
-  Destination: "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+  Destination: "bG23eHAVywMb53i7QVh3gUjujEM29c1ySs",
   // Fee: '10',
 
   // JavaScript converts operands to 32-bit signed ints after doing bitwise

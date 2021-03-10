@@ -5,9 +5,9 @@ const {
 } = require("../dist");
 
 const tx_json = {
-  Account: "r9LqNeG6qHxjeUocjvVki2XR35weJ9mZgQ",
+  Account: "bnCLGxX4DaGh89DLohvD1qcCHSXnrvHPnN",
   Amount: "1000",
-  Destination: "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+  Destination: "bG23eHAVywMb53i7QVh3gUjujEM29c1ySs",
   Fee: "10",
   Flags: 2147483648,
   Sequence: 1,
@@ -56,7 +56,7 @@ describe("Signing data", function () {
         "81",
         // VLLength
         "14",
-        "5B812C9D57731E27A2DA8B1830195F88EF32A3B6",
+        "3E49CA67EB494CA1BFE0F4FC8BEBE8861952E7F5",
         // Destination
         "83",
         // VLLength
@@ -66,7 +66,7 @@ describe("Signing data", function () {
     );
   });
   test("can create multi signing blobs", function () {
-    const signingAccount = "rJZdUusLDtY9NEsGea7ijqhVrXv98rYBYN";
+    const signingAccount = "bPcW6Gtebrb6sYUnWie2xfoEWme34mEoG";
     const signingJson = Object.assign({}, tx_json, { SigningPubKey: "" });
     const actual = encodeForMultisigning(signingJson, signingAccount);
     expect(actual).toBe(
@@ -98,14 +98,14 @@ describe("Signing data", function () {
         "81",
         // VLLength
         "14",
-        "5B812C9D57731E27A2DA8B1830195F88EF32A3B6",
+        "3E49CA67EB494CA1BFE0F4FC8BEBE8861952E7F5",
         // Destination
         "83",
         // VLLength
         "14",
         "B5F762798A53D543A014CAF8B297CFF8F2F937E8",
         // signingAccount suffix
-        "C0A5ABEF242802EFED4B041E8F2D4A8CC86AE3D1",
+        "04780F77CC211BBE72AF69BF97C78377BEB74877",
       ].join("")
     );
   });

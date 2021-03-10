@@ -51,27 +51,28 @@ describe("Hash256", function () {
 
 describe("Currency", function () {
   test("Will have a null iso() for dodgy BRT ", function () {
-    const bad = Currency.from("0000000000000000000000005852500000000000");
+    const bad = Currency.from("0000000000000000000000006252740000000000");
     expect(bad.iso()).toBeUndefined();
     expect(bad.isNative()).toBe(false);
   });
+
   test("Currency with lowercase letters decode to hex", () => {
-    expect(Currency.from("xRp").toJSON()).toBe(
-      "0000000000000000000000007852700000000000"
+    expect(Currency.from("bRt").toJSON()).toBe(
+      "0000000000000000000000006252740000000000"
     );
   });
   test("Currency codes with symbols decode to hex", () => {
-    expect(Currency.from("x|p").toJSON()).toBe(
-      "000000000000000000000000787C700000000000"
+    expect(Currency.from("b|t").toJSON()).toBe(
+      "000000000000000000000000627C740000000000"
     );
   });
   test("Currency codes with uppercase and 0-9 decode to ISO codes", () => {
-    expect(Currency.from("X8P").toJSON()).toBe("X8P");
+    expect(Currency.from("B8T").toJSON()).toBe("B8T");
     expect(Currency.from("USD").toJSON()).toBe("USD");
   });
   test("can be constructed from a Buffer", function () {
-    const xrp = new Currency(Buffer.alloc(20));
-    expect(xrp.iso()).toBe("BRT");
+    const brt = new Currency(Buffer.alloc(20));
+    expect(brt.iso()).toBe("BRT");
   });
   test("throws on invalid reprs", function () {
     expect(() => Currency.from(Buffer.alloc(19))).toThrow();

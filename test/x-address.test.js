@@ -3,7 +3,7 @@ const fixtures = require("./fixtures/x-codec-fixtures.json");
 
 let json_x1 = {
   OwnerCount: 0,
-  Account: "XVXdn5wEVm5G4UhEHWDPqjvdeH361P7BsapL4m2D2XnPSwT",
+  Account: "W75CTjU5oPmXAgY4ua9XKes1aYSYgwWe7hm37DWiQp4kZHK",
   PreviousTxnLgrSeq: 7,
   LedgerEntryType: "AccountRoot",
   PreviousTxnID:
@@ -15,7 +15,7 @@ let json_x1 = {
 
 let json_r1 = {
   OwnerCount: 0,
-  Account: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
+  Account: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
   PreviousTxnLgrSeq: 7,
   LedgerEntryType: "AccountRoot",
   PreviousTxnID:
@@ -28,9 +28,9 @@ let json_r1 = {
 
 let json_null_x = {
   OwnerCount: 0,
-  Account: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
-  Destination: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
-  Issuer: "XVXdn5wEVm5G4UhEHWDPqjvdeH361P4GETfNyyXGaoqBj71",
+  Account: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
+  Destination: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
+  Issuer: "W75CTjU5oPmXAgY4ua9XKes1aYSYgwQjgRisnRTuxtjpPsn",
   PreviousTxnLgrSeq: 7,
   LedgerEntryType: "AccountRoot",
   PreviousTxnID:
@@ -42,9 +42,9 @@ let json_null_x = {
 
 let json_invalid_x = {
   OwnerCount: 0,
-  Account: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
-  Destination: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
-  Issuer: "XVXdn5wEVm5g4UhEHWDPqjvdeH361P4GETfNyyXGaoqBj71",
+  Account: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
+  Destination: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
+  Issuer: "WTVYJNdD7RZr3Sqbd3U1DojzVwY2o14f86pMPeL5soBuaKt",
   PreviousTxnLgrSeq: 7,
   LedgerEntryType: "AccountRoot",
   PreviousTxnID:
@@ -56,9 +56,9 @@ let json_invalid_x = {
 
 let json_null_r = {
   OwnerCount: 0,
-  Account: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
-  Destination: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
-  Issuer: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
+  Account: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
+  Destination: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
+  Issuer: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
   PreviousTxnLgrSeq: 7,
   LedgerEntryType: "AccountRoot",
   PreviousTxnID:
@@ -70,9 +70,9 @@ let json_null_r = {
 
 let invalid_json_issuer_tagged = {
   OwnerCount: 0,
-  Account: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
-  Destination: "rLs1MzkFWCxTbuAHgjeTZK4fcCDDnf2KRv",
-  Issuer: "XVXdn5wEVm5G4UhEHWDPqjvdeH361P7BsapL4m2D2XnPSwT",
+  Account: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
+  Destination: "b4jVwPM5rPrJD2687v5TLhzDV6LujFUo9T",
+  Issuer: "W75CTjU5oPmXAgY4ua9XKes1aYSYgwWe7hm37DWiQp4kZHK",
   PreviousTxnLgrSeq: 7,
   LedgerEntryType: "AccountRoot",
   PreviousTxnID:
@@ -84,7 +84,7 @@ let invalid_json_issuer_tagged = {
 
 let invalid_json_x_and_tagged = {
   OwnerCount: 0,
-  Account: "XVXdn5wEVm5G4UhEHWDPqjvdeH361P7BsapL4m2D2XnPSwT",
+  Account: "W75CTjU5oPmXAgY4ua9XKes1aYSYgwWe7hm37DWiQp4kZHK",
   PreviousTxnLgrSeq: 7,
   LedgerEntryType: "AccountRoot",
   PreviousTxnID:
@@ -98,7 +98,7 @@ let invalid_json_x_and_tagged = {
 let json_issued_x = {
   TakerPays: {
     currency: "USD",
-    issuer: "X7WZKEeNVS2p9Tire9DtNFkzWBZbFtJHWxDjN9fCrBGqVA4",
+    issuer: "WTVYJNdD7RZr3Sqbd3U1DojzVwY2o1HGVxU5D3aebwEF7AM",
     value: "7072.8",
   },
 };
@@ -106,7 +106,7 @@ let json_issued_x = {
 let json_issued_r = {
   TakerPays: {
     currency: "USD",
-    issuer: "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+    issuer: "bvXAaV56CsgT87gaVfZYz4fA9MNu2t63w",
     value: "7072.8",
   },
 };
@@ -114,7 +114,7 @@ let json_issued_r = {
 let json_issued_with_tag = {
   TakerPays: {
     currency: "USD",
-    issuer: "X7WZKEeNVS2p9Tire9DtNFkzWBZbFtSiS2eDBib7svZXuc2",
+    issuer: "WTVYJNdD7RZr3Sqbd3U1DojzVwY2o14f86pMPeL5soBuaKv",
     value: "7072.8",
   },
 };
@@ -164,7 +164,7 @@ describe("Invalid X-Address behavior", () => {
   });
 });
 
-describe("ripple-binary-codec x-address test", function () {
+describe("brt-binary-codec x-address test", function () {
   function makeSuite(name, entries) {
     describe(name, function () {
       entries.forEach((t, testN) => {

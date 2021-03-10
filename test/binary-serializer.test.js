@@ -61,7 +61,7 @@ const Ticket = {
 
 let json_undefined = {
   TakerPays: "223174650",
-  Account: "rPk2dXr27rMw9G5Ej9ad2Tt7RJzGy8ycBp",
+  Account: "b4jZcWbZTbL93E6N53ncZS1TQHzEymypwr",
   TransactionType: "OfferCreate",
   Memos: [
     {
@@ -77,7 +77,7 @@ let json_undefined = {
   TakerGets: {
     currency: "XMM",
     value: "100",
-    issuer: "rExAPEZvbkZqYPuNcZ7XEBLENEshsWDQc8",
+    issuer: "bNxA4NYv2jYFX4uDpYTWNwKNDNtstVUPpm",
   },
   Flags: 524288,
   Sequence: undefined,
@@ -86,7 +86,7 @@ let json_undefined = {
 
 let json_omitted = {
   TakerPays: "223174650",
-  Account: "rPk2dXr27rMw9G5Ej9ad2Tt7RJzGy8ycBp",
+  Account: "b4jZcWbZTbL93E6N53ncZS1TQHzEymypwr",
   TransactionType: "OfferCreate",
   Memos: [
     {
@@ -100,7 +100,7 @@ let json_omitted = {
   TakerGets: {
     currency: "XMM",
     value: "100",
-    issuer: "rExAPEZvbkZqYPuNcZ7XEBLENEshsWDQc8",
+    issuer: "bNxA4NYv2jYFX4uDpYTWNwKNDNtstVUPpm",
   },
   Flags: 524288,
   LastLedgerSequence: 6220135,

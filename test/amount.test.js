@@ -34,7 +34,7 @@ describe("Amount", function () {
     const amt = Amount.from(fixture);
     const rewritten = {
       value: "1",
-      issuer: "rrrrrrrrrrrrrrrrrrrrrhoLvTp",
+      issuer: "bbbbbbbbbbbbbbbbbbbbbs8KvSr",
       currency: "USD",
     };
     expect(amt.toJSON()).toEqual(rewritten);
