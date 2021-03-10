@@ -3,7 +3,7 @@
  */
 
 const input = {
-  temBAD_SEND_XRP_PATHS: -283,
+  temBAD_SEND_BRT_PATHS: -283,
   temBAD_SEQUENCE: -282,
   temBAD_SIGNATURE: -281,
   temBAD_SRC_ACCOUNT: -280,
@@ -69,7 +69,7 @@ const input = {
   tecINSUF_RESERVE_LINE: 122,
   tecINSUF_RESERVE_OFFER: 123,
   tecNO_DST: 124,
-  tecNO_DST_INSUF_XRP: 125,
+  tecNO_DST_INSUF_BRT: 125,
   tecNO_LINE_INSUF_RESERVE: 126,
   tecNO_LINE_REDUNDANT: 127,
   tecPATH_DRY: 128,
@@ -99,7 +99,7 @@ const input = {
   tecTOO_SOON: 152,
 };
 
-let startingFromTemBADSENDXRPPATHS = -284;
+let startingFromTemBADSENDBRTPATHS = -284;
 
 let startingFromTefFAILURE = -199;
 
@@ -118,7 +118,7 @@ Object.keys(input).forEach((key) => {
     previousKey = key;
   }
   if (key.substring(0, 3) === "tem") {
-    console.log(`    "${key}": ${startingFromTemBADSENDXRPPATHS++},`);
+    console.log(`    "${key}": ${startingFromTemBADSENDBRTPATHS++},`);
   } else if (key.substring(0, 3) === "tef") {
     console.log(`    "${key}": ${startingFromTefFAILURE++},`);
   } else if (key.substring(0, 3) === "ter") {

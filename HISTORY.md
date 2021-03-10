@@ -45,7 +45,7 @@
 
 ## 0.2.2 (2019-07-26)
 
-- Input validation - Amount and Fee should not allow fractional XRP drops ([#31](https://github.com/ripple/ripple-binary-codec/issues/31))
+- Input validation - Amount and Fee should not allow fractional BRT drops ([#31](https://github.com/BRTNetwork/js-brt-binary-codec/issues/31))
 - Fix lint errors
 - Update dependencies (including lodash and mocha)
 - Require node 10 (.nvmrc)

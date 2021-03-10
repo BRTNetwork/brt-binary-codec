@@ -9,7 +9,7 @@ const HEX_REGEX = /^[A-F0-9]{40}$/;
  */
 function isoToBytes(iso: string): Buffer {
   const bytes = Buffer.alloc(20);
-  if (iso !== "XRP") {
+  if (iso !== "BRT") {
     const isoBytes = iso.split("").map((c) => c.charCodeAt(0));
     bytes.set(isoBytes, 12);
   }
@@ -67,12 +67,12 @@ function bytesFromRepresentation(input: string): Buffer {
  * Class defining how to encode and decode Currencies
  */
 class Currency extends Hash160 {
-  static readonly XRP = new Currency(Buffer.alloc(20));
+  static readonly BRT = new Currency(Buffer.alloc(20));
   private readonly _iso?: string;
   private readonly _isNative: boolean;
 
   constructor(byteBuf: Buffer) {
-    super(byteBuf ?? Currency.XRP.bytes);
+    super(byteBuf ?? Currency.BRT.bytes);
 
     let onlyISO = true;
 
@@ -87,9 +87,9 @@ class Currency extends Hash160 {
       }
     }
 
-    const lossLessISO = onlyISO && iso !== "XRP" && ISO_REGEX.test(iso);
+    const lossLessISO = onlyISO && iso !== "BRT" && ISO_REGEX.test(iso);
     this._isNative = onlyISO && code.toString("hex") === "000000";
-    this._iso = this._isNative ? "XRP" : lossLessISO ? iso : undefined;
+    this._iso = this._isNative ? "BRT" : lossLessISO ? iso : undefined;
   }
 
   /**

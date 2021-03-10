@@ -2918,7 +2918,7 @@
             "type_id": 6,
             "is_native": true,
             "type": "Amount",
-            "error": "1000000000000 absolute XRP is bigger than max native value 100000000000.0",
+            "error": "1000000000000 absolute BRT is bigger than max native value 100000000000.0",
             "is_negative": false
         },
         {
@@ -2926,7 +2926,7 @@
             "type_id": 6,
             "is_native": true,
             "type": "Amount",
-            "error": "10000000000000000000 absolute XRP is bigger than max native value 100000000000.0",
+            "error": "10000000000000000000 absolute BRT is bigger than max native value 100000000000.0",
             "is_negative": true
         },
         {
@@ -3463,7 +3463,7 @@
             "expected_hex": "7C"
         },
         {
-            "test_json": "tecNO_DST_INSUF_XRP",
+            "test_json": "tecNO_DST_INSUF_BRT",
             "type_id": 16,
             "type_specialisation_field": "TransactionResult",
             "type": "UInt8",
@@ -3471,7 +3471,7 @@
         },
         {
             "test_json": 125,
-            "canonical_json": "tecNO_DST_INSUF_XRP",
+            "canonical_json": "tecNO_DST_INSUF_BRT",
             "type_id": 16,
             "type_specialisation_field": "TransactionResult",
             "type": "UInt8",
